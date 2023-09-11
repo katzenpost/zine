@@ -2,7 +2,7 @@ PDFLATEX:="pdflatex"
 
 .PHONY: all
 
-all: 8up-zine-print-final.pdf
+all: katzenpost-zine-print-final.pdf
 
 %.pdf: %.tex
 	$(PDFLATEX) $<
@@ -10,5 +10,5 @@ all: 8up-zine-print-final.pdf
 clean:
 	rm -f *.pdf *.log *.aux
 
-8up-zine-print-final.pdf: 8up-zine-print-step1.pdf
-8up-zine-print-step1.pdf: 8up-zine.pdf
+katzenpost-zine-print-final.pdf: katzenpost-zine-print-step1.pdf
+katzenpost-zine-print-step1.pdf: katzenpost-zine.pdf
