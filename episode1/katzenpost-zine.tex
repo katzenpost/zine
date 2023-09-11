@@ -1,0 +1,130 @@
+\documentclass[statementpaper,oneside,article,14pt]{memoir}
+\usepackage{geometry}
+\usepackage{libertine}
+\usepackage{kantlipsum}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+
+% Disable chapter/section numbering.
+\setsecnumdepth{none}
+\maxsecnumdepth{none}
+
+% Optional background
+% http://tex.stackexchange.com/a/276280
+\usepackage{transparent}
+\usepackage{eso-pic}
+\newcommand{\BackgroundPic}[1]{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+{\transparent{0.4} \includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{#1}}%
+\vfill
+}}}
+
+\begin{document}
+
+% Edit inside the { brackets } to change these.
+
+\title{Katzenpost Zine \\
+  episode 0x00: \\
+  what anonymous communication is NOT }
+\author{dawuud}
+\date{Fall 2023}
+
+\begingroup
+\let\cleardoublepage\clearpage
+
+% \AddToShipoutPicture*{\BackgroundPic{samplecover}}
+
+\begin{titlingpage}
+\maketitle
+
+% Could add a small author's note, etc. here if you like.
+\begin{center}
+  \includegraphics[scale=.2]{katzenpost_logo} \\
+\end{center}
+
+\end{titlingpage}
+
+\endgroup
+
+% As the zine is so short, you probably won't need page numbers; however, if you
+% want them, comment out the next line with a %.
+%\pagestyle{empty}
+
+
+%% CONTENT GOES BELOW
+
+\section{non-anonymous communication}
+
+ALL Internet communication protocols are NOT anonymous. This means
+they snitch on you, your IP address and geographic location. If you
+are a journalist, whistleblower, activist, revolutionary, or just a
+normal fucking human being that doesn't like to be spied on then this
+shit is relavant to you.
+
+\newpage
+
+Here's a list of companies, services and protocols which are NOT anonymous:
+
+\begin{itemize}
+  \item Telegram
+  \item Signal
+  \item WhatsApp
+  \item Wire
+  \item Twitter
+  \item Facebook
+  \item Google
+  \item Bitcoin
+  \item Bittorrent
+\end{itemize}
+
+\newpage
+
+\section{But Signal is end to end encrypted, doesn't that mean it's anonymous?}
+
+NO!!! Signal is NOT anonymous and high risk people should NOT be using it.
+Services like Signal which are end to end encrypted leak all kinds of metadata such as:
+
+\begin{itemize}
+\item IP address
+\item geographic location
+\item message size
+\item message sequence
+\item message receiver
+\item message sender
+\item entire social graph
+\end{itemize}
+
+
+
+
+\newpage
+4
+
+\newpage
+5
+
+\newpage
+6
+
+\newpage
+7
+
+%% CONTENT ENDS
+
+% Back cover
+
+\newpage
+
+\Large We are all under more surveillance than ALL of human history!
+
+\begin{center}
+  \includegraphics[scale=.2]{katzenpost_logo} \\
+\end{center}
+
+
+\end{document}
